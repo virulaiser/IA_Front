@@ -23,7 +23,7 @@ function Example() {
     setError(null);
     
     try {
-      const response = await axios.post("http://localhost:5000/api/gemini", { message} ); // Reemplaza '/api/gemini' con tu punto final de API
+      const response = await axios.post("http://localhost:3000/api/gemini", { message} ); // Reemplaza '/api/gemini' con tu punto final de API
       setChatResponse(response.data.response);
     } catch (err) {
       setError("Error al procesar la solicitud.");
@@ -55,4 +55,4 @@ function Example() {
 export default Example;
 
 /* Tu aplicación React está corriendo en http://localhost:5173.
-Tu servidor Node.js/Express.js está corriendo en http://localhost:5000. */
+Tu servidor Node.js/Express.js está corriendo en http://localhost:3000. */
